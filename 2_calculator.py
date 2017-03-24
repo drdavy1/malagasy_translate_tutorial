@@ -11,11 +11,20 @@ Exercise:
 """
 def add_two_numbers(x,y):
     """ Adds two numbers """
-    return x + y
+    return int(x) + int(y)
 
 def subtract_two_numbers(x,y):
     """ subtract two numbers """
-    return x - y
+    return int(x) - int (y)
+	
+def multiplication_two_numbers(x,y):
+	""" Multiply two numbers """
+	return int(x) * int (y)
+	
+def division_two_numbers(x,y):
+	""" Divide two numbers """
+	return int(x) / int(y)
+	
 
 #Greeting
 print("Hello! This is a simple program for simple calculations")
@@ -33,4 +42,42 @@ if doToday=="add":
 
 print("This is the result:", result)
 print("I hope it is correct...")
+
+print("What would you like to do today?")
+doToday = "subtract" #HACK
+print("We will " + doToday + " two numbers now.")
+
+var1 = input("First number: ")
+var2 = input("Second number: ")
+
+if doToday=="subtract":
+    result = subtract_two_numbers(var1, var2)
+print("This is the result:", result)
+print("I hope it is correct...")
+
+print("What would you like to do today?")
+doToday = "multiplication" #HACK
+print("We will " + doToday + " two numbers now.")
+
+var1 = input("First number: ")
+var2 = input("Second number: ")
+	
+if doToday=="multiplication":
+    result = multiplication_two_numbers(var1, var2)
+print("This is the result:", result)
+print("I hope it is correct...")
+
+print("What would you like to do today?")
+doToday = "division" #HACK
+print("We will " + doToday + " two numbers now.")
+
+var1 = input("First number: ")
+var2 = input("Second number: ")
+
+if doToday=="division":
+    result = division_two_numbers(var1, var2)
+
+print("This is the result:", result)
+print("I hope it is correct...")
+
 print("Bye, now!")
