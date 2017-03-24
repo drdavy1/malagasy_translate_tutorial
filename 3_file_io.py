@@ -13,10 +13,15 @@ To write something to a file you can use following code:
 
 meerkat_file = open('meerkats.txt', 'r')
 
-for line in meerkat_file:
-    words = line.strip().split()
-    for word in words:
-        print(word)
-    print(line)
+
+last_words = ""
+for word in meerkat_file:
+	last_words = word
+print(last_words)
 
 meerkat_file.close()
+
+f = open('last_meerkat.txt', 'w')
+f.write("line in a last_meerkat" + '\n')
+    
+f.close()
