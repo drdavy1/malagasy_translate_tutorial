@@ -15,7 +15,7 @@ import os #library for doing stuff related to the operatin system
 
 #Greeting
 print("This is a simple script")
-print("fonovana")
+print("fanovana")
 
 currentDirectory = os.getcwd() #same as `dir` in windows and `pwd` in linux
 print("We are in directory:", currentDirectory)
