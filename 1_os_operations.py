@@ -15,7 +15,7 @@ import os #library for doing stuff related to the operatin system
 
 #Greeting
 print("This is a simple script")
-print("fanovana")
+print("Fiovana farany")
 
 currentDirectory = os.getcwd() #same as `dir` in windows and `pwd` in linux
 print("We are in directory:", currentDirectory)
@@ -24,5 +24,6 @@ print("The following is a list of files in a current directory:")
 ListOfDirs = os.listdir()
 for dir in ListOfDirs:
     print(dir)
+
 	
 print("Here it ends")
